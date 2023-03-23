@@ -1,0 +1,59 @@
+      .Cards{
+        display: grid;
+      }
+      
+      .Card {
+        position:relative;
+        width: 300px;
+        display:grid;
+        grid-area: 2/3/5/6
+      }
+      
+      .Card:before {
+        content: "";
+        display:flex;
+        padding-top: 100%;
+      }
+       
+      .Card Cards {
+        position: absolute;
+        
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+      }
+
+      .gelb{
+        background-color: yellow;
+      }
+
+      .rot{
+        background-color: red;
+        
+      }
+
+      .orange{
+        background-color: orange;
+        
+      }
+
+      .blau{
+        background-color: blue;
+      }
+
+      .pink{
+        background-color: pink;
+      }
+
+      .braun{
+        background-color: brown;
+      }
+
+      .lila{
+        background-color: purple;
+      }
+
+      .grün{
+        background-color: green;
+      }
