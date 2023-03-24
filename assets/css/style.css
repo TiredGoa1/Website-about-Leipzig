@@ -1,3 +1,10 @@
+:root {
+    --blue: rgb(132, 186, 223);
+    --dark: rgb(2, 16, 29);
+    --light: rgb(168, 209, 247);
+}
+
+
 body,
 html {
     margin: 0;
@@ -12,11 +19,10 @@ html {
     position: relative;
     display: flex;
     gap: 2rem;
-    background-color: rgb(132, 186, 223);
+    background-color: var(--blue)
 }
 
 .Navigationspunkt {
-
     color: white;
 }
 
@@ -35,7 +41,6 @@ html {
     display: none;
     position: absolute;
     z-index: 9999;
-
 }
 
 .Overview a {
@@ -54,17 +59,17 @@ html {
 }
 
 .img1 {
-    background-image: url("../img/treepink.jpg");
+    background-image: url("../img/Altemesse.jpg");
     height: calc(100vh - 50px);
 }
 
 .img2 {
-    background-image: url("../img/blumenpink.jpg");
+    background-image: url("../img/Voelkerschlachtdenkmal.jpg");
     height: 300px;
 }
 
 .img3 {
-    background-image: url("../img/vögelblumen.jpg");
+    background-image: url("../img/bubble.jpg");
     height: 300px;
 }
 
@@ -75,6 +80,7 @@ html {
     justify-content: center;
     align-items: center;
     opacity: 0.75;
+    background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,13 +88,10 @@ html {
 
 
 .text {
-    
-    
     color: white;
     font-size: 3rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-
 }
 
 .text .title{
@@ -96,4 +99,24 @@ html {
     background-color: rgb(70, 70, 70);
     color: white;
     padding: 1rem;
+}
+
+.Storydark{
+    background-color: var(--dark);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+.Storylight{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--dark);
+    color: var(--blue);
 }
