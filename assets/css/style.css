@@ -44,17 +44,17 @@ html {
 }
 
 .img1 {
-    background-image: url("/Leipzigview/assets/img/treepink.jpg");
+    background-image: url("../img/treepink.jpg");
     height: calc(100vh - 50px);
 }
 
 .img2 {
-    background-image: url("/Bilder_Programmieren/spring-bird-blume.jpg");
+    background-image: url("../img/blumenpink.jpg");
     height: 300px;
 }
 
 .img3 {
-    background-image: url("/Leipzigview/assets/img/vögelblumen.jpg");
+    background-image: url("../img/vögelblumen.jpg");
     height: 300px;
 }
 
