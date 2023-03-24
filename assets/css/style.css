@@ -1,12 +1,9 @@
 body,
 html {
     margin: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-}
-
-.img1 {
-    background-image: url("/Leipzigview/assets/img/treepink.jpg");
-    height: calc(100vh - 50px);
 }
 
 .Navigationsbar {
@@ -19,11 +16,11 @@ html {
 }
 
 .Navigationspunkt {
-    
+
     color: white;
 }
 
-.Navigation{
+.Navigation {
     display: flex;
     align-items: center;
     height: 100%;
@@ -44,4 +41,49 @@ html {
 
 .Navigationspunkt:hover .Overview {
     display: block;
+}
+
+.img1 {
+    background-image: url("/Leipzigview/assets/img/treepink.jpg");
+    height: calc(100vh - 50px);
+}
+
+.img2 {
+    background-image: url("/Bilder_Programmieren/spring-bird-blume.jpg");
+    height: 300px;
+}
+
+.img3 {
+    background-image: url("/Leipzigview/assets/img/vögelblumen.jpg");
+    height: 300px;
+}
+
+.img1,
+.img2,
+.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.text {
+    
+    
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+.text .title{
+    opacity: 80%;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 1rem;
 }
