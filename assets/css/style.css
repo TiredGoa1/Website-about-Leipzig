@@ -65,12 +65,12 @@ html {
 
 .img2 {
     background-image: url("../img/Voelkerschlachtdenkmal.jpg");
-    height: 300px;
+    height: 30rem;
 }
 
 .img3 {
     background-image: url("../img/bubble.jpg");
-    height: 300px;
+    height: 30rem;
 }
 
 .img1,
@@ -106,7 +106,8 @@ html {
     color: white;
     padding: 5px;
     text-align: center;
-    margin: 0;
+
+    
 }
 
 .Storylight{
