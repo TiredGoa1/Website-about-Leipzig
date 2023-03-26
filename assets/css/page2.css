@@ -1,3 +1,64 @@
+:root {
+  --blue: rgb(132, 186, 223);
+  --lightblue: rgb(194, 230, 253);
+  --dark: rgb(2, 16, 29);
+  --light: rgb(168, 209, 247);
+}
+
+body, html{
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--lightblue);
+}
+
+.Navigationsbar {
+  height: 50px;
+  padding: 0 80px;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--blue)
+}
+
+.Navigationspunkt {
+  color: white;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 9999;
+
+}
+
+.Overview {
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+}
+
+.Overview a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.Navigationspunkt:hover .Overview {
+  display: block;
+  z-index: 9999;
+}
+
+.Overview:hover {
+  display: block;
+  z-index: 9999;
+}
+
+
+
 .container {
     display: flex;
     align-items: center;
@@ -17,4 +78,14 @@
   .text1 {
     font-size: 20px;
     padding: 20px;
+  }
+
+  .image2 {
+    flex-basis: 40%;
+    order: 2;
+    
+  }
+
+  .text2 {
+    font-size: 20px;
   }
