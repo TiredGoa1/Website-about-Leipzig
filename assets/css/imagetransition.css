@@ -3,6 +3,7 @@
     --lightblue: rgb(194, 230, 253);
     --dark: rgb(2, 16, 29);
     --light: rgb(168, 209, 247);
+    --shadow: rgb(167, 167, 167);
 }
 
 body, html{
@@ -68,6 +69,7 @@ img{
     width: 65rem;
     transition: width 2s;
     transition-delay: 1s;
+    box-shadow: 10px 10px var(--shadow);
 }
 
 img:hover{
