@@ -1,5 +1,6 @@
 :root {
     --blue: rgb(132, 186, 223);
+    --lightblue: rgb(194, 230, 253);
     --dark: rgb(2, 16, 29);
     --light: rgb(168, 209, 247);
 }
@@ -10,7 +11,6 @@ html {
     margin: 0;
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .Navigationsbar {
