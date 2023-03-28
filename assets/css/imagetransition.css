@@ -65,21 +65,52 @@ body, html{
     justify-content: center;
 }
 
-img{
+.hochkant{
     margin: 20px;
     width: 5rem;
     transition: width 2s;
     transition-delay: 1s;
     box-shadow: 5px 5px var(--shadow);
-    
-    
+    cursor: pointer;
 }
 
-img:hover{
+.querformat{
+    margin: 20px;
+    height: 5rem;
+    transition: height 2s;
+    transition-delay: 1s;
+    box-shadow: 5px 5px var(--shadow);
+    cursor: pointer;
+}
+
+.hochkant:hover{
     width: 25rem;
+}
+
+.querformat:hover{
+    height: 25rem;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
 }
+
+/* .test{
+    height: 65vh;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide-in{
+    0% {
+        transform: translateX(-110vh);
+    }
+    100% {
+        transform: translateX(30vh);
+    }
+} */
