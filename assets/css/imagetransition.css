@@ -66,14 +66,17 @@ body, html{
 }
 
 img{
-    width: 65rem;
+    margin: 20px;
+    width: 5rem;
     transition: width 2s;
     transition-delay: 1s;
-    box-shadow: 10px 10px var(--shadow);
+    box-shadow: 5px 5px var(--shadow);
+    
+    
 }
 
 img:hover{
-    width: 80rem;
+    width: 25rem;
 }
 
 h1{
