@@ -1,5 +1,41 @@
-body {
+:root{
+  --blue: rgb(132, 186, 223);
+  --lightblue: rgb(194, 230, 253);
+  --dark: rgb(2, 16, 29);
+  --light: rgb(178, 214, 247);
+
+} 
+
+body,
+html {
   margin: 0;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light);
+}
+
+.dropdown{
+  width: 50px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--blue);
+  padding: 25px 25px;
+  margin: auto;
+
+}
+
+.dropdown-content{
+  justify-content: left;
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
 }
 
 .Cards {
@@ -59,5 +95,6 @@ body {
 
 button{
   margin: 1rem;
-  
+  display: block;
+
 }
