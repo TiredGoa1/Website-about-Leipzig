@@ -17,11 +17,10 @@ html {
 .dropdown{
   width: 50px;
   position: relative;
-  text-align: center;
   display: inline-block;
   background-color: var(--blue);
   padding: 25px 25px;
-  margin: auto;
+  
 
 }
 
@@ -50,7 +49,7 @@ html {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 .Card {
@@ -94,7 +93,7 @@ html {
 }
 
 button{
-  margin: 1rem;
+  margin: 15px;
   display: block;
 
 }
