@@ -41,7 +41,7 @@ function handleCardClick(card){
                 card.style.backgroundColor="#000000";
                 aufgedeckteKarteRef.style.backgroundColor="#000000";
                 
-            },2000)
+            },500)
         }
 
         aufgedeckteKarte = undefined;
