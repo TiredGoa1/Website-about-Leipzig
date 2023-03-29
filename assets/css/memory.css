@@ -1,58 +1,63 @@
-      body{
-        margin: 0;
-      }
-      
-      .Cards {
-        display: grid;
-        grid-template-columns: repeat(4, 150px);
-        grid-template-rows: repeat(4, 150px);
-        grid-column-gap: 14px;
-        grid-row-gap: 14px;
-      }
+body {
+  margin: 0;
+}
 
-      .Cardswrapper{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+}
 
-      .Card {
-        position: relative;
-        width: 150px;
-        height: 150px;
-      }
+.Cardswrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      .gelb {
-        background-color: yellow;
-      }
+.Card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
 
-      .rot {
-        background-color: red;
+.gelb {
+  background-color: yellow;
+}
 
-      }
+.rot {
+  background-color: red;
 
-      .orange {
-        background-color: orange;
+}
 
-      }
+.orange {
+  background-color: orange;
 
-      .blau {
-        background-color: blue;
-      }
+}
 
-      .pink {
-        background-color: pink;
-      }
+.blau {
+  background-color: blue;
+}
 
-      .braun {
-        background-color: rgb(66, 0, 0);
-      }
+.pink {
+  background-color: pink;
+}
 
-      .lila {
-        background-color: purple;
-      }
+.braun {
+  background-color: rgb(66, 0, 0);
+}
 
-      .grün {
-        background-color: green;
-      }
+.lila {
+  background-color: purple;
+}
+
+.grün {
+  background-color: green;
+}
+
+button{
+  margin: 1rem;
+  
+}
