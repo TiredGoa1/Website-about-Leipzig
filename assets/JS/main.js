@@ -12,13 +12,16 @@ const orders=shuffle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
 
 let aufgedeckteKarte = undefined; 
 let matchedCards = [];
+let isProcessing = false;
 
 cards.forEach((card,index) => {
     card.style.order = orders[index];
     card.style.backgroundColor="#000000";
 
     card.onclick = () =>{
+        if (!isProcessing) {
         handleCardClick(card);
+        }
     };
 });
 
@@ -42,20 +45,18 @@ function handleCardClick(card){
         }
         else{
             const aufgedeckteKarteRef=aufgedeckteKarte;
-            
+            isProcessing = true;
+
             setTimeout( () => {
-                
-                
                 card.style.backgroundColor="#000000";
                 aufgedeckteKarteRef.style.backgroundColor="#000000";
-                
-            },500)
+                isProcessing = false;
+            }, 500);
         }
 
         aufgedeckteKarte = undefined;
-    }
-    else{
+    }else{
         aufgedeckteKarte = card
     }
-}
+};
 
