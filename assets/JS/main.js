@@ -19,7 +19,7 @@ cards.forEach((card,index) => {
     card.style.backgroundColor="#000000";
 
     card.onclick = () =>{
-        if (!isProcessing) {
+        if (!isProcessing && !matchedCards.includes(card)) {
         handleCardClick(card);
         }
     };
@@ -28,11 +28,10 @@ cards.forEach((card,index) => {
 
 
 function handleCardClick(card){
-
-    if (matchedCards.includes(card)) {
-        // already matched card, do nothing
-        return;
-      }
+     if (aufgedeckteKarte) {
+        // do not allow multiple cards to be selected at the same time
+        isProcessing = true;
+     }
 
     card.style.backgroundColor=""
     if (aufgedeckteKarte){
@@ -42,6 +41,7 @@ function handleCardClick(card){
         if (cardColor == aufgedeckteKarteColor){
             console.log("paar")
             matchedCards.push(card, aufgedeckteKarte);
+            isProcessing = false;
         }
         else{
             const aufgedeckteKarteRef=aufgedeckteKarte;
