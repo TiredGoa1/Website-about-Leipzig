@@ -6,7 +6,8 @@
     --shadow: rgb(167, 167, 167);
 }
 
-body, html{
+body,
+html {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -59,58 +60,99 @@ body, html{
 
 
 
-.Image{
+.Image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hochkant{
-    margin: 20px;
+.hochkant {
+    margin: 2em;
     width: 5rem;
+    height: 10em;
     transition: width 2s;
     transition-delay: 1s;
-    box-shadow: 5px 5px var(--shadow);
+    box-shadow: 0.5em 0.5em var(--shadow);
     cursor: pointer;
 }
 
-.querformat{
-    margin: 20px;
-    height: 5rem;
-    transition: height 2s;
+.hochkant-wrapper figcaption{
+    font-size: 1em;
+}
+
+.hochkant-wrapper{
+    font-size: 16px;
+    transition: transform 2s;
+    transform: scale(0.5);
     transition-delay: 1s;
-    box-shadow: 5px 5px var(--shadow);
+}
+
+.hochkant-wrapper:hover {
+    transform: scale(1);
+}
+
+.querformat {
+    margin: 2em;
+    height: 10em;
+    box-shadow: 0.5em 0.5em var(--shadow);
     cursor: pointer;
 }
 
-.hochkant:hover{
-    width: 25rem;
+.querformat-wrapper figcaption {
+    font-size: 1em;
+
 }
 
-.querformat:hover{
-    height: 25rem;
+.querformat-wrapper {
+    font-size: 16px;
+    transition: transform 2s;
+    transform: scale(0.5);
+    transition-delay: 1s;
 }
 
-h1{
+.querformat-wrapper:hover {
+    transform: scale(1);
+}
+
+
+
+h1 {
     text-align: center;
     text-transform: uppercase;
 }
 
 /* .test{
     height: 65vh;
+    width: 80vh;
+    position: absolute;
+    object-fit: cover;
     animation-name: slide-in;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
+.test:last-child{
+    animation-name: slide-in, fade-out;
+}
+
 @keyframes slide-in{
     0% {
-        transform: translateX(-110vh);
+        transform: translateX(0) rotate3d(1,1,0,0);
     }
     100% {
-        transform: translateX(30vh);
+        transform: translateX(calc(100vw - 100%)) rotate3d(1,1,0,180deg);
+    }
+}
+
+@keyframes fade-out{
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 } */
