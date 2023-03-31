@@ -11,19 +11,26 @@ const cards=document.querySelectorAll(".Card");
 const orders=shuffle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
 
 let aufgedeckteKarte = undefined; 
+let matchedCards = [];
 
 cards.forEach((card,index) => {
     card.style.order = orders[index];
     card.style.backgroundColor="#000000";
 
     card.onclick = () =>{
-        handleCardClick(card)
-    }
-})
+        handleCardClick(card);
+    };
+});
 
 
 
 function handleCardClick(card){
+
+    if (matchedCards.includes(card)) {
+        // already matched card, do nothing
+        return;
+      }
+
     card.style.backgroundColor=""
     if (aufgedeckteKarte){
         const cardColor = card.dataset.color;
@@ -31,6 +38,7 @@ function handleCardClick(card){
         
         if (cardColor == aufgedeckteKarteColor){
             console.log("paar")
+            matchedCards.push(card, aufgedeckteKarte);
         }
         else{
             const aufgedeckteKarteRef=aufgedeckteKarte;
