@@ -4,6 +4,18 @@
   --dark: rgb(2, 16, 29);
   --light: rgb(178, 214, 247);
 
+  --gelb: rgb(247, 239, 136);
+  --rot: rgb(226, 72, 72);
+  --orange: rgb(248, 159, 99);
+  --blau: rgb(116, 171, 223);
+  --pink: rgb(255, 167, 243);
+  --braun: rgb(126, 97, 96);
+  --lila: rgb(170, 66, 235);
+  --grün: rgb(162, 238, 118);
+
+
+
+
 } 
 
 body,
@@ -59,37 +71,37 @@ html {
 }
 
 .gelb {
-  background-color: yellow;
+  background-color: var(--gelb);
 }
 
 .rot {
-  background-color: red;
+  background-color: var(--rot);
 
 }
 
 .orange {
-  background-color: orange;
+  background-color: var(--orange);
 
 }
 
 .blau {
-  background-color: blue;
+  background-color: var(--blau);
 }
 
 .pink {
-  background-color: pink;
+  background-color: var(--pink);
 }
 
 .braun {
-  background-color: rgb(66, 0, 0);
+  background-color: var(--braun);
 }
 
 .lila {
-  background-color: purple;
+  background-color: var(--lila);
 }
 
 .grün {
-  background-color: green;
+  background-color: var(--grün);
 }
 
 button{
