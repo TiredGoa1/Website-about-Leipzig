@@ -26,18 +26,16 @@ html {
   background-color: var(--light);
 }
 
+
+
 .dropdown{
   width: 50px;
   position: relative;
   display: inline-block;
-  
   padding: 25px 25px;
-  
-
 }
 
 .dropdown-content{
-  justify-content: left;
   display: none;
   position: absolute;
   background-color: white;
@@ -47,6 +45,15 @@ html {
 
 .dropdown:hover .dropdown-content{
   display: block;
+  align-items: center;
+  
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Cards {
