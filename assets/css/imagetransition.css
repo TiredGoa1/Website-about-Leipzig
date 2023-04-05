@@ -10,6 +10,7 @@ body,
 html {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--lightblue);
 }
 
 .Navigationsbar {
@@ -120,6 +121,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+
 
 /* .test{
     height: 65vh;
